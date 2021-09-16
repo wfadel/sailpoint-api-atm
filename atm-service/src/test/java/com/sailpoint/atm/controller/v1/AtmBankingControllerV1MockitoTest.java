@@ -4,7 +4,7 @@ import com.sailpoint.atm.dto.v1.AmountDtoV1;
 import com.sailpoint.atm.dto.v1.BalanceDtoV1;
 import com.sailpoint.atm.facade.v1.AtmAuthenticationFacadeV1;
 import com.sailpoint.atm.facade.v1.AtmBankingFacadeV1;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -38,7 +38,7 @@ public class AtmBankingControllerV1MockitoTest {
     @InjectMocks
     private AtmBankingControllerV1 atmBankingControllerV1;
 
-    @org.junit.jupiter.api.Test
+    @Test
     public void deposit() {
         // Given
         AmountDtoV1 amountDtoV1 = AmountDtoV1.builder().value(AMOUNT).build();
